@@ -1,0 +1,5 @@
+@font-face {
+    font-family: 'Brastika';
+    font-weight: 900; /* Ajuste o peso conforme necessário */
+    src: url('/fonts/brasika-display-trial.otf') format('truetype');
+  }
