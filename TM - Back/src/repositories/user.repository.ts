@@ -45,7 +45,8 @@ export class UserRepository {
   ): Promise<UserModel> {
     const user = await this.userRepository.findOne({ where: { username } });
     if (!user) {
-      throw new Error(`Não existe usuário com nome ${username}`); // Erro se o usuário não for encontrado
+      console.log('usario não encontrado');
+      return null; // Erro se o usuário não for encontrado
     }
     return user; // Retorna o usuário encontrado
   }
@@ -54,7 +55,8 @@ export class UserRepository {
   async getOneUserByEmail(@Param('email') email: string): Promise<UserModel> {
     const user = await this.userRepository.findOne({ where: { email } });
     if (!user) {
-      throw new Error(`Não existe usuário com email ${email}`); // Erro se o usuário não for encontrado
+      console.log(`Não existe usuário com email ${email}`);
+      return null // Erro se o usuário não for encontrado
     }
     return user; // Retorna o usuário encontrado
   }

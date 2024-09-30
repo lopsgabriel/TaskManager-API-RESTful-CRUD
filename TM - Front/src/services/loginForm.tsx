@@ -93,7 +93,7 @@ export default function LoginForm({ setCurrentUser, setScreen }: LoginFormProps)
             </div>
             <button
                 type="submit"
-                className="rounded-xl border-4 border-customBrown bg-custombgBlue text-white py-1 text-lg hover:bg-custombgBlue2 hover:duration-200 font-brastika font-bold"
+                className="rounded-xl border-4 border-customBlackBlue bg-customAlternativeBlue text-white py-1 text-lg hover:bg-custombgBlue hover:duration-200 font-brastika font-bold"
             >
                 Sign in
             </button>

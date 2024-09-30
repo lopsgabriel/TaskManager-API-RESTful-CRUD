@@ -63,19 +63,19 @@
 
       <div>
         {screen === 'login' && (
-          <div className="min-h-screen flex flex-col" style={{ backgroundImage: "url('background3.png')", backgroundSize: "100%" }}>
+          <div className="min-h-screen flex flex-col" style={{ backgroundImage: "url('cozy_background2.png')", backgroundSize: "100%" }}>
           <header className=" flex justify-between px-5">     
-            <img src="tmlogo2.png" alt="Logo task manager" className="h-16"/>   
+            <img src="tmlogo.png" alt="Logo task manager" className="h-16"/>   
           </header>   
           <main className=" w-full flex-grow">
               <div className=" justify-center flex py-8">
-              <div className=" w-4/12 border-4 border-customBrown rounded-xl bg-custombgpink2 flex  justify-center  ">
+              <div className=" w-4/12 border-4 border-customBlackBlue rounded-xl bg-customGreyBrown flex  justify-center  ">
                 <div>
-                  <h1 className="text-5xl  text-customBrown  items-center flex flex-col pb-5 pt-10 font-medium font-brastika"> Sing in</h1>
+                  <h1 className="text-5xl  text-customWhite  items-center flex flex-col pb-5 pt-10 font-medium font-brastika"> SING IN</h1>
                   <LoginForm setCurrentUser={setCurrentUser} setScreen={setscreen} />
                   <div className="flex justify-center mb-4">
-                    <p className="text-customGrey"> Don't have an account? </p>
-                    <button className=" ml-1 text-customBrown font-semibold" onClick={() =>setscreen('register')}> Sign Up</button>
+                    <p className=""> Don't have an account? </p>
+                    <button className=" ml-1  font-semibold" onClick={() =>setscreen('register')}> Sign Up</button>
                   </div>
                 </div>         
               </div>
@@ -85,19 +85,19 @@
         )}
 
         {screen === 'register' && (
-          <div className="min-h-screen flex flex-col" style={{ backgroundImage: "url('background3.png')", backgroundSize: "100%" }}>
+          <div className="min-h-screen flex flex-col" style={{ backgroundImage: "url('cozy_background2.png')", backgroundSize: "100%" }}>
             <header className=" flex justify-between px-5">     
-              <img src="tmlogo2.png" alt="Logo task manager" className="h-16"/>   
+              <img src="tmlogo.png" alt="Logo task manager" className="h-16"/>   
             </header>   
             <main className=" w-full flex-grow">
               <div className=" justify-center flex py-8">
-                <div className=" w-4/12 border-4 border-customBrown rounded-xl bg-custombgpink2 flex  justify-center  ">
+                <div className=" w-4/12 border-4 border-customBlackBlue rounded-xl bg-customGreyBrown flex  justify-center  ">
                   <div>
-                    <h1 className="text-5xl  text-customBrown  items-center flex flex-col pb-5 pt-10 font-medium font-brastika"> SIGN UP</h1>
+                    <h1 className="text-5xl  text-customWhite  items-center flex flex-col pb-5 pt-10 font-medium font-brastika"> SIGN UP</h1>
                     <RegisterForm setCurrentUser={setCurrentUser} setScreen={setscreen} />
                     <div className="flex justify-center mb-4">
                       <p> Have an account? </p>
-                      <button className=" ml-1 font-semibold" onClick={() =>setscreen('login')}> Sign In</button>
+                      <button className=" ml-1  font-semibold" onClick={() =>setscreen('login')}> Sign In</button>
                     </div>                 
                   </div>         
                 </div>

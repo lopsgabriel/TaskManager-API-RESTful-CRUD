@@ -19,7 +19,12 @@ export default {
         custombgBlue2: '#ABC7DD',
         custombgpink4: '#FFE3ED',
         customBrown: '#493838',
-        custombgPink5: '#FFEEF3'
+        custombgPink5: '#FFEEF3',
+        customDarkBlue: '#253439',
+        customGreyBrown: '#595551',
+        customWhite:'#f6f4f1',
+        customBlackBlue: '#101f24',
+        customAlternativeBlue: '#96aed1'
  
       },
       textShadow: {

@@ -12,6 +12,7 @@ import { UserModel } from 'src/models/user.model';
 import { UserRepository } from 'src/repositories/user.repository';
 import { UserSchema } from 'src/schemas/user.schema';
 
+
 @Controller('/user')
 export class UserController {
   // Injetando a dependência do UserRepository no controlador
@@ -54,11 +55,10 @@ export class UserController {
     @Param('username') username: string,
   ): Promise<UserModel> {
     try {
-      // Chama o método getOneUserByUsername do repositório para obter um usuário específico pelo nome de usuário
-      return await this.userRepository.getOneUserByUsername(username);
+      const user = await this.userRepository.getOneUserByUsername(username);
+      return user;
     } catch (error) {
-      // Tratamento de erro ao buscar um usuário
-      throw new Error('Erro ao achar usuario');
+      throw new Error (' erro ao buscar usuario')
     }
   }
 
@@ -70,7 +70,7 @@ export class UserController {
       return await this.userRepository.getOneUserByEmail(email);
     } catch (error) {
       // Tratamento de erro ao buscar um usuário
-      throw new Error('Erro ao achar usuario');
+      throw new Error('Erro ao achar usuario com esse email');
     }
   }
 
