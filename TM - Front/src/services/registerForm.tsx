@@ -84,14 +84,14 @@ export default function RegisterForm({ setCurrentUser, setScreen }:RegisterFormP
             ref={emailInputRef}
             type="email"
             placeholder="Email"
-            className="text-customBrown bg-customWhite rounded-md py-1 px-2 font-brastika focus:outline-none w-full"
+            className="text-customBrown border border-customGrey bg-white rounded-md focus:outline-none py-1 text-lg px-2 font-brastika"
             />
             
             <input 
             ref={userInputRef}
             type="text"
             placeholder="Username"
-            className="text-customBrown bg-customWhite rounded-md py-1 text-lg px-2 font-brastika focus:outline-none w-full"
+            className="text-customBrown border border-customGrey bg-white rounded-md focus:outline-none py-1 text-lg px-2 font-brastika"
             />
 
             <div className="relative w-full">   
@@ -99,13 +99,13 @@ export default function RegisterForm({ setCurrentUser, setScreen }:RegisterFormP
                 ref={passwordInputRef}
                 type={showPassword ? "text" : "password"}
                 placeholder="Password"
-                className="text-customBrown bg-customWhite rounded-md py-1 px-2 font-brastika focus:outline-none w-full"
+                className="text-customBrown border border-customGrey bg-white rounded-md focus:outline-none py-1 text-lg px-2 font-brastika"
                 />
 
                 <button
                     type="button"
                     onClick={togglePassword}
-                    className="absolute inset-y-0 right-0 flex items-center px-2 bg-customWhite rounded-lg font-medium text-customBrown"
+                    className="absolute inset-y-0 right-0 flex items-center px-2 border-r border-y border-customGrey bg-white rounded-r-lg font-medium text-customBrown"
                 >
                     {showPassword ? "Hide" : "Show"}
                 </button>

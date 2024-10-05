@@ -53,24 +53,24 @@ export default function CreateTaskForm({ currentUser, setScreen}:CreateTaskFormP
             ref = {titleInputRef}
             type="text"
             placeholder="Nome da tarefa"
-            className="w-full rounded-t-xl text-customBrown  focus:outline-none py-2 font-semibold px-3"
+            className="w-full rounded-t-xl text-customDarkBlue  focus:outline-none py-2 font-semibold px-3"
             />       
             <input
             ref = {descInputRef}
             type="text"
             placeholder="Descrição"
-            className="w-full text-sm focus:outline-none text-customBrown  py-2 font-semibold px-3"
+            className="w-full text-sm focus:outline-none text-customDarkBlue  py-2 font-semibold px-3"
             onChange={() => createNewTaskButtom()}
             />   
             <input
             ref = {obsInputRef}
             type="text"
             placeholder="obs"
-            className="w-full rounded-b-xl text-sm focus:outline-none text-customBrown  py-2 px-3"
+            className="w-full rounded-b-xl text-sm focus:outline-none text-customDarkBlue  py-2 px-3"
             onChange={() => createNewTaskButtom()}
             />     
             <div className="justify-end flex px-8">
-            <button className={`bg-pink-200 border-2  border-custombgPink mt-2 font-semibold text-customBrown hover:bg-pink-300 duration-300  rounded-xl px-2 py-1 ${!clickBottom && 'opacity-50 cursor-not-allowed'}`}
+            <button className={`bg-customAlternativeBlue border-2  border-customGrey mt-2 font-semibold text-white hover:bg-custombgBlue2 duration-300  rounded-xl px-2 py-1 ${!clickBottom && 'opacity-50 cursor-not-allowed'}`}
             type="submit"                 
             disabled = {!clickBottom} > Criar Tarefa </button> 
             </div>                                         

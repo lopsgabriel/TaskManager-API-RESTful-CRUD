@@ -74,19 +74,19 @@ export default function LoginForm({ setCurrentUser, setScreen }: LoginFormProps)
                 ref={userInputRef}
                 type="text"
                 placeholder="Username"
-                className="text-customBrown bg-custombgpink3 rounded-md focus:outline-none py-1 text-lg px-2 font-brastika"
+                className="text-customBrown border border-customGrey bg-white rounded-md focus:outline-none py-1 text-lg px-2 font-brastika"
             />
             <div className="relative w-full">
                 <input
                     ref={passwordInputRef}
                     type={showPassword ? "text" : "password"}
                     placeholder="Password"
-                    className="text-customBrown bg-custombgpink3 focus:outline-none rounded-md py-1 px-2 font-brastika"
+                    className="text-customBrown bg-white focus:outline-none border border-customGrey rounded-md py-1 px-2 font-brastika"
                 />
                 <button
                     type="button"
                     onClick={togglePassword}
-                    className="absolute inset-y-0 right-0 flex items-center px-2 bg-custombgpink3 rounded-lg font-medium text-customBrown"
+                    className="absolute inset-y-0 right-0 flex items-center px-2 border-r border-y border-customGrey bg-white rounded-r-lg font-medium text-customBrown"
                 >
                     {showPassword ? "Hide" : "Show"}
                 </button>

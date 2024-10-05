@@ -24,7 +24,9 @@ export default {
         customGreyBrown: '#595551',
         customWhite:'#f6f4f1',
         customBlackBlue: '#101f24',
-        customAlternativeBlue: '#96aed1'
+        customAlternativeBlue: '#96aed1',
+        customWeakBlue: '#c9eeff',
+        customWeakestBlue: '#edf9ff'
  
       },
       textShadow: {
